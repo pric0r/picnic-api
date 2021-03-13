@@ -1,0 +1,9 @@
+# secrets
+/secrets/*
+!/secrets/credentials.example.json
+
+# python
+*.pyc
+
+# ide
+.vscode

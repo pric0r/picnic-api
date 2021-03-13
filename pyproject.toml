@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "picnic-price"
+version = "0.1.0"
+description = ""
+authors = ["Thorben Jensen <jensen.thorben@gmail.com>"]
+
+[tool.poetry.scripts]
+picnic = 'picnic_price.cli:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.3.2"
+python-picnic-api = {path = "../python-picnic-api", develop = true}
+pydantic = "^1.8.1"
+numpy = "^1.20.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+rope = "^0.18.0"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
